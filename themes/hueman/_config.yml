@@ -14,7 +14,7 @@ customize:
     theme_color: '#006bde'
     highlight: androidstudio
     sidebar: right # sidebar position, options: left, right
-    thumbnail: true # enable posts thumbnail, options: true, false
+    thumbnail: false # enable posts thumbnail, options: true, false
     favicon: # path to favicon
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
         twitter: https://twitter.com/SeunghunandChan
@@ -38,7 +38,7 @@ search:
 
 # Comment
 comment:
-    disqus: seunghun_kim # enter disqus shortname here
+    disqus: huna # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
     facebook: # enter true to enable
