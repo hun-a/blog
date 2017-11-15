@@ -2,6 +2,7 @@
 layout: post
 title: JDBC (1) - Class.forName(java.lang.String)?!
 tags: [java, jdbc]
+categories: ["Java", "JDBC"]
 comments: true
 ---
 
