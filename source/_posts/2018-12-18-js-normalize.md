@@ -70,7 +70,7 @@ const update = async dirpath =>
 
 즉, 한글 문자 1개를 1로 평가한다.
 
-근데 `fs.readdir` 함수로 읽은 파일명은 화면에서 위와 동일하게 출력되면서 `length`가 10 으로 평가되었다.
+근데 `fs.readdir` 함수로 읽은 파일명은 화면에서는 `가전제품` 이라고 출력되면서 `length`가 10 으로 평가되었다.
 
 이게 뭐지? 혼란스럽다.
 
@@ -100,7 +100,7 @@ const update = async dirpath =>
 
 전자의 경우는 Mac OS X에서 사용되는 유니코드 정규화 방식이며, 후자는 Windows 에서 사용되는 방식이다.
 
-자세한 내용은 [여기](https://blogs.technet.microsoft.com/spsofficesupportko/2017/01/06/%ED%8C%8C%EC%9D%BC%EB%AA%85%EC%9D%98-%ED%95%9C%EA%B8%80%EC%9E%90%EB%AA%A8%EA%B0%80-%EB%B6%84%ED%95%B4%EB%90%98%EC%96%B4-%EB%B3%B4%EC%97%AC%EC%A7%80%EB%8A%94-%ED%98%84%EC%83%81-unicode-nfd/){:target="\_blank"} 를 참고하면 참 좋겠다.
+자세한 내용은 [여기](https://blogs.technet.microsoft.com/spsofficesupportko/2017/01/06/%ED%8C%8C%EC%9D%BC%EB%AA%85%EC%9D%98-%ED%95%9C%EA%B8%80%EC%9E%90%EB%AA%A8%EA%B0%80-%EB%B6%84%ED%95%B4%EB%90%98%EC%96%B4-%EB%B3%B4%EC%97%AC%EC%A7%80%EB%8A%94-%ED%98%84%EC%83%81-unicode-nfd/) 를 참고하면 참 좋겠다.
 
 근데 둘 다 표준이라 사실 뭘 쓰던 상관은 없는 셈이다.
 
@@ -110,7 +110,7 @@ const update = async dirpath =>
 
 ~~(Mac OS X 이 과하게 친절한 녀석... 😭)~~
 
-또한, [깜장토끼님의 블로그](https://m.blog.naver.com/PostView.nhn?blogId=kiros33&logNo=220671385630&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F){:target="\_blank"} 에서 [String.normalize()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize){:target="\_blank"} 라는 엄청난 녀석을 발견했다.
+또한, [깜장토끼님의 블로그](https://m.blog.naver.com/PostView.nhn?blogId=kiros33&logNo=220671385630&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F) 에서 [String.normalize()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize) 라는 엄청난 녀석을 발견했다.
 
 # 해결
 

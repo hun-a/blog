@@ -79,3 +79,4 @@ theme: hueman
 deploy:
   type: git
   repo: https://github.com/hun-a/hun-a.github.io
+  branch: master
