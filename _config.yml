@@ -78,4 +78,4 @@ theme: hueman
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/seunghun-kim/seunghun-kim.github.io
+  repo: https://github.com/hun-a/hun-a.github.io
