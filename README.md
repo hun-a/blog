@@ -27,5 +27,5 @@ $ npm install -g hexo-cli
 - deployment
 
 ```
-$ hexo deploy
+$ hexo deploy --generate
 ```
