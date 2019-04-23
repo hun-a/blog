@@ -2,7 +2,7 @@
 title: hibernate 설정 + 간단 예제
 comments: true
 date: 2017-11-17 09:00:00
-tags: ['Java', 'Hibernate']
+tags: ['java', 'hibernate']
 categories: ['Java', 'Libraries']
 ---
 

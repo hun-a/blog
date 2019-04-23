@@ -2,7 +2,7 @@
 title: Euclidean_algorithm
 comments: true
 date: 2017-11-15 12:20:56
-tags: ['Algorithms', 'Euclidean']
+tags: ['algorithms', 'euclidean']
 categories: ['Algorithms']
 ---
 

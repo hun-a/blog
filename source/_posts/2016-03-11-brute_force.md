@@ -2,8 +2,8 @@
 title: brute_force
 comments: true
 date: 2016-03-11 14:03:54
-tags: ['Algorithms', 'Brute_force']
-categories: ['Algorithms']
+tags: ["algorithms", "brute_force"]
+categories: ["Algorithms"]
 ---
 
 # 잡담

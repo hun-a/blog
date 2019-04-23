@@ -1,7 +1,7 @@
 ---
 title: Encoding the querystring in express
 date: 2019-03-11 23:46:15
-tags: ["Node.js", "NodeJS", "Express", "querystring", "encode"]
+tags: ["node.js", "nodejs", "express", "querystring", "encode"]
 categories: ["JavaScript", "Node.js"]
 comments: true
 ---

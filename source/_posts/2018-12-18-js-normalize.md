@@ -2,7 +2,7 @@
 title: JS - String.normalize()
 date: 2018-12-18 01:00:00
 comments: true
-tags: ["JS", "normalize"]
+tags: ["js", "normalize"]
 categories: ["JavaScript", "Basic"]
 ---
 
