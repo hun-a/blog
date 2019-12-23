@@ -84,7 +84,7 @@ var addIndex = _curry1(function addIndex(fn) {
 });
 ```
 
-클로저로 반환되는 `curryN` 함수의 지역변수들을 보면 아래와 같다.
+`curryN` 함수의 콜백함수의 지역변수들을 보면 아래와 같다.
 
 > `idx`: `element`의 `index`로 사용될 변수
 > `originFn`: `fn` 으로 전달받은 함수의 `callback`으로 사용될 함수
@@ -117,10 +117,43 @@ return fn.apply(this, args);
 
 # 실제 사용 예제
 
+DOM 리스트를 조회해서 순서가 짝수일때는 파란색을, 홀수일때는 빨강색을 배경으로 넣어야 한다고 가정해보자.
 
+물론 실무에서 촌스럽게 아래같은 `css`를 사용하진 않겠지만
+
+중요한건 **번갈아가며** 홀짝 홀짝 파빨파빨 색깔이 나오게 하는게 키포인트다.
+
+```css
+// css
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+```
+
+```JavaScript
+const doms = document.getElementsByClassName("row");
+
+const callback = (el, i, arr) =>
+  el.classList.add(i % 2 === 0 ? "blue" : "red");
+
+const forEach = R.addIndex(R.forEach);
+
+forEach(callback, doms);
+
+/* 
+vanilla JS
+Array.prototype.forEach.call(doms, callback);
+*/
+```
+
+Vanilla JS도 굉장히 있어보이는 기분은... 기분탓일꺼다... 😉
 
 # 마치며...
 
 간단하게 사용할 수 있는 함수를 구현하기 위해서는 복잡하고 어려운 개념들이 많이 필요하다.
 
-복잡하고 어려운 개념들이 포함된 코드들을 소설책 읽듯이 물 흐르듯 이해하며 읽어갈 수 있는 실력이 생기면 좋겠다. 🙃
+복잡하고 어려운 개념들이 포함된 코드들을 소설책 읽듯이 물 흐르듯 이해하며 읽어갈 수 있는 실력이 생기는 그날까지 꾸준히 공부해야겠다. 🙃
