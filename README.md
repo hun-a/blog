@@ -1,3 +1,5 @@
+# I will move my blog to the [Tistory](https://seunghunchan.tistory.com/). See ya.
+
 # [hun-a.github.io/](https://hun-a.github.io/)
 
 This is my personal blog files.
